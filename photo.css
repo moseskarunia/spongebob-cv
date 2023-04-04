@@ -4,33 +4,17 @@
   font-family: "Open Sans";
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  background: #fffde7;
 }
 
 h1 {
   font-family: "peralta";
-}
-
-.header-text {
-  text-align: end;
-  flex: 1;
-  margin-right: 16px;
-}
-
-.header {
-  padding: 16px;
-  display: flex;
-  flex: row;
-  align-items: center;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
 }
 
 img {
@@ -40,6 +24,22 @@ img {
   border-radius: 100%;
 }
 
+.header {
+  padding: 16px;
+  display: flex;
+  flex: row;
+  align-items: center;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  color:#000000;
+}
+
+.header-text {
+  text-align: end;
+  flex: 1;
+  margin-right: 16px;
+}
+
 @media (max-width: 600px) {
   .header {
     flex-direction: column-reverse;
@@ -47,9 +47,5 @@ img {
 
   .header-text {
     text-align: center;
-  }
-
-  .content {
-    flex-direction: column;
   }
 }
